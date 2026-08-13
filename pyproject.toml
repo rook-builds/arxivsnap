@@ -7,7 +7,7 @@ packages = ["src/arxivsnap"]
 
 [project]
 name = "arxivsnap"
-version = "0.1.0"
+version = "0.2.0"
 description = "Fetch arXiv academic papers from the command line — search by topic, formatted as markdown for humans and agents"
 readme = "README.md"
 license = {text = "MIT"}
