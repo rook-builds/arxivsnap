@@ -19,5 +19,8 @@ jobs:
       - name: Install dependencies
         run: pip install -e ".[test]"
 
+      - name: Verify package imports
+        run: python -c "from arxivsnap.core import fetch, to_text, to_json, to_table, to_csv; from arxivsnap.mcp_server import handle_mcp_request; print('imports OK')"
+
       - name: Run tests
-        run: pytest -v
+        run: python -m pytest tests/ -v --tb=short
